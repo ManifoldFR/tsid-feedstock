@@ -1,16 +1,16 @@
 {% set name = "tsid" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/stack-of-tasks/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 283ad0374a8f0389976e824f0f47974131abe42dbbd9b2d391a52f353be681be
+  url: https://github.com/stack-of-tasks/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: c31f3c61a1a40c9d6e2411ef224da3db51c8a1fdb185425fc6ce84e06fe33862
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
