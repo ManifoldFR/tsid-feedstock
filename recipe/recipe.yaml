@@ -48,6 +48,8 @@ tests:
       include:
         - tsid/macros.hpp
         - tsid/config.hh
+      lib:
+        - tsid
   - python:
       imports:
         - tsid
