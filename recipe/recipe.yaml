@@ -33,6 +33,7 @@ requirements:
     - libboost-python-devel
     - eigen
     - eigen-abi-devel
+    - coal # necessary because Pinocchio 3.9 depends on 'hpp-fcl'
     - pinocchio
     - eiquadprog
     - proxsuite
