@@ -44,6 +44,10 @@ requirements:
     - ${{ pin_subpackage(name, upper_bound='x.x.x') }}
 
 tests:
+  - package_contents:
+      include:
+        - tsid/macros.hpp
+        - tsid/config.hh
   - python:
       imports:
         - tsid
